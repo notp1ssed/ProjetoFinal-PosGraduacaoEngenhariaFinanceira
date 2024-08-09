@@ -144,7 +144,7 @@ def correlation_map(df, threshold=None):
         # Apply the threshold: keep only correlations above the threshold
         quotes_pct_ret_corr = quotes_pct_ret_corr.applymap(lambda x: x if abs(x) >= threshold else np.nan)
 
-    plt.subplots(figsize=(12, 10))
+    plt.subplots(figsize=(10, 8))
     sns.heatmap(quotes_pct_ret_corr, annot=True, vmin=-1, vmax=1, cmap='coolwarm')
     plt.show()
     
