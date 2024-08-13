@@ -153,13 +153,14 @@ def dispersion_map(df, column1, column2):
     df_pct_ret = df.pct_change().ffill()
 
     # Fazer scatter plot
-    fig = px.scatter(df_pct_ret, x=column1, y=column2)
+    fig = px.scatter(df_pct_ret, x=column1, y=column2, width=900, height=500, trendline="ols", trendline_color_override="black", title='regressão linear OLS')
+
+    fig.update_layout(xaxis=dict(title="x"), yaxis = dict(title="y"))
     
     # Acrescentar tema
     fig = fig.update_layout(template='seaborn')
 
     fig.show()
-
 
 ################################################################################
 #                          RISK ANALYSIS                                       #
