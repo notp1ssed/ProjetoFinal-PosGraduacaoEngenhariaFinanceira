@@ -9,3 +9,5 @@ https://www.youtube.com/watch?v=TpQtD7ONfxQ
 
 https://www.ikigailabs.io/multivariate-time-series-forecasting-in-python-settings/vector-autoregression-python
 https://www.youtube.com/watch?v=6Ye0CsfRDJg
+
+https://www.statsmodels.org/dev/vector_ar.html#var
