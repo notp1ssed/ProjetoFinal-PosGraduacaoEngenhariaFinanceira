@@ -155,7 +155,7 @@ def dispersion_map(df, column1, column2):
     # Fazer scatter plot
     fig = px.scatter(df_pct_ret, x=column1, y=column2, width=900, height=500, trendline="ols", trendline_color_override="black", title='regressão linear OLS')
 
-    fig.update_layout(xaxis=dict(title="x"), yaxis = dict(title="y"))
+    fig.update_layout(xaxis=dict(title=f"{column1}"), yaxis = dict(title=f"{column1}"))
     
     # Acrescentar tema
     fig = fig.update_layout(template='seaborn')
