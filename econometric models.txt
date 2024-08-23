@@ -1,7 +1,3 @@
-ARDL
-https://www.kaggle.com/code/datascientistsohail/autoregressive-distributed-lag-ardl-model
-https://medium.com/@vishnu.19je0919/auto-regressive-distributed-lag-ardl-time-series-forecasting-model-explained-with-code-d013e7f7e043
-
 
 VAR
 https://www.analyticsvidhya.com/blog/2018/09/multivariate-time-series-guide-forecasting-modeling-python-codes/
