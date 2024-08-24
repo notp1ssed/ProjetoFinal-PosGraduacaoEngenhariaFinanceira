@@ -1,0 +1,427 @@
+
+####################################################################################################### 
+
+model_1a 
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                BTC_USD   R-squared:                       0.187
+Model:                            OLS   Adj. R-squared:                 -0.016
+Method:                 Least Squares   F-statistic:                    0.9216
+Date:                Sun, 25 Aug 2024   Prob (F-statistic):              0.460
+Time:                        00:24:23   Log-Likelihood:                 38.296
+No. Observations:                  16   AIC:                            -68.59
+Df Residuals:                      12   BIC:                            -65.50
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+======================================================================================
+                         coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------
+const               -133.1807    252.905     -0.527      0.608    -684.214     417.852
+Mining_Difficulty      1.2042      0.783      1.537      0.150      -0.502       2.911
+USD_OnChain_Volume    -0.0026      0.060     -0.044      0.965      -0.133       0.128
+BTC_Supply            16.6216     33.732      0.493      0.631     -56.874      90.117
+==============================================================================
+Omnibus:                        6.579   Durbin-Watson:                   0.991
+Prob(Omnibus):                  0.037   Jarque-Bera (JB):                1.596
+Skew:                           0.048   Prob(JB):                        0.450
+Kurtosis:                       1.456   Cond. No.                     7.44e+05
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 7.44e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
+####################################################################################################### 
+
+
+####################################################################################################### 
+
+model_1b 
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                BTC_USD   R-squared:                       0.102
+Model:                            OLS   Adj. R-squared:                 -0.122
+Method:                 Least Squares   F-statistic:                    0.4549
+Date:                Sun, 25 Aug 2024   Prob (F-statistic):              0.719
+Time:                        00:24:23   Log-Likelihood:                 37.499
+No. Observations:                  16   AIC:                            -67.00
+Df Residuals:                      12   BIC:                            -63.91
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+=========================================================================================
+                            coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------
+const                    39.2266    178.396      0.220      0.830    -349.465     427.918
+Nr_Transactions          -0.0605      0.069     -0.876      0.398      -0.211       0.090
+L1.USD_OnChain_Volume    -0.0478      0.062     -0.768      0.458      -0.184       0.088
+L1.BTC_Supply            -4.6063     24.490     -0.188      0.854     -57.965      48.753
+==============================================================================
+Omnibus:                        1.154   Durbin-Watson:                   0.829
+Prob(Omnibus):                  0.562   Jarque-Bera (JB):                0.915
+Skew:                          -0.528   Prob(JB):                        0.633
+Kurtosis:                       2.494   Cond. No.                     3.65e+05
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 3.65e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
+####################################################################################################### 
+
+
+####################################################################################################### 
+
+model_1c 
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                BTC_USD   R-squared:                       0.427
+Model:                            OLS   Adj. R-squared:                  0.283
+Method:                 Least Squares   F-statistic:                     2.978
+Date:                Sun, 25 Aug 2024   Prob (F-statistic):             0.0741
+Time:                        00:24:23   Log-Likelihood:                 41.089
+No. Observations:                  16   AIC:                            -74.18
+Df Residuals:                      12   BIC:                            -71.09
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+=====================================================================================
+                        coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+const               -13.0735      8.103     -1.613      0.133     -30.728       4.581
+Nr_Addresses         -0.2435      0.130     -1.875      0.085      -0.526       0.039
+Mining_Difficulty     1.4074      0.607      2.319      0.039       0.085       2.730
+Nr_Tx_Block          -0.0902      0.054     -1.663      0.122      -0.208       0.028
+==============================================================================
+Omnibus:                        3.303   Durbin-Watson:                   1.455
+Prob(Omnibus):                  0.192   Jarque-Bera (JB):                1.201
+Skew:                           0.058   Prob(JB):                        0.549
+Kurtosis:                       1.663   Cond. No.                     2.35e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 2.35e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+####################################################################################################### 
+
+
+####################################################################################################### 
+
+model_1d 
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                BTC_USD   R-squared:                       0.427
+Model:                            OLS   Adj. R-squared:                  0.283
+Method:                 Least Squares   F-statistic:                     2.978
+Date:                Sun, 25 Aug 2024   Prob (F-statistic):             0.0741
+Time:                        00:24:23   Log-Likelihood:                 41.089
+No. Observations:                  16   AIC:                            -74.18
+Df Residuals:                      12   BIC:                            -71.09
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+=====================================================================================
+                        coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+const               -13.0735      8.103     -1.613      0.133     -30.728       4.581
+Nr_Tx_Block          -0.0902      0.054     -1.663      0.122      -0.208       0.028
+Nr_Addresses         -0.2435      0.130     -1.875      0.085      -0.526       0.039
+Mining_Difficulty     1.4074      0.607      2.319      0.039       0.085       2.730
+==============================================================================
+Omnibus:                        3.303   Durbin-Watson:                   1.455
+Prob(Omnibus):                  0.192   Jarque-Bera (JB):                1.201
+Skew:                           0.058   Prob(JB):                        0.549
+Kurtosis:                       1.663   Cond. No.                     2.35e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 2.35e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+####################################################################################################### 
+
+
+####################################################################################################### 
+
+model_2a 
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                BTC_USD   R-squared:                       0.445
+Model:                            OLS   Adj. R-squared:                  0.244
+Method:                 Least Squares   F-statistic:                     2.207
+Date:                Sun, 25 Aug 2024   Prob (F-statistic):              0.135
+Time:                        00:24:23   Log-Likelihood:                 41.351
+No. Observations:                  16   AIC:                            -72.70
+Df Residuals:                      11   BIC:                            -68.84
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          7.9539      1.456      5.462      0.000       4.749      11.159
+EURUSD=X       0.3009      2.310      0.130      0.899      -4.784       5.385
+L2.SPY         0.1294      0.699      0.185      0.857      -1.410       1.669
+TLT           -0.5919      0.861     -0.688      0.506      -2.487       1.303
+CL=F          -1.2358      0.513     -2.407      0.035      -2.366      -0.106
+==============================================================================
+Omnibus:                        2.420   Durbin-Watson:                   1.625
+Prob(Omnibus):                  0.298   Jarque-Bera (JB):                1.596
+Skew:                          -0.562   Prob(JB):                        0.450
+Kurtosis:                       1.937   Cond. No.                     1.69e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.69e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+####################################################################################################### 
+
+
+####################################################################################################### 
+
+model_2b 
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                BTC_USD   R-squared:                       0.170
+Model:                            OLS   Adj. R-squared:                 -0.131
+Method:                 Least Squares   F-statistic:                    0.5647
+Date:                Sun, 25 Aug 2024   Prob (F-statistic):              0.693
+Time:                        00:24:23   Log-Likelihood:                 38.131
+No. Observations:                  16   AIC:                            -66.26
+Df Residuals:                      11   BIC:                            -62.40
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+==========================================================================================
+                             coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------
+const                    -21.2428     37.571     -0.565      0.583    -103.936      61.451
+L2.QQQ                    -0.9488      0.943     -1.006      0.336      -3.024       1.126
+GLD                       -0.3660      1.357     -0.270      0.792      -3.353       2.621
+L2.BalanceSheet_global     6.9546      9.263      0.751      0.469     -13.432      27.341
+L2.CL=F                   -0.5007      0.517     -0.967      0.354      -1.640       0.638
+==============================================================================
+Omnibus:                        1.835   Durbin-Watson:                   1.079
+Prob(Omnibus):                  0.399   Jarque-Bera (JB):                1.206
+Skew:                          -0.412   Prob(JB):                        0.547
+Kurtosis:                       1.937   Cond. No.                     3.46e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 3.46e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+####################################################################################################### 
+
+
+####################################################################################################### 
+
+model_2c 
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                BTC_USD   R-squared:                       0.367
+Model:                            OLS   Adj. R-squared:                  0.209
+Method:                 Least Squares   F-statistic:                     2.318
+Date:                Sun, 25 Aug 2024   Prob (F-statistic):              0.127
+Time:                        00:24:23   Log-Likelihood:                 40.294
+No. Observations:                  16   AIC:                            -72.59
+Df Residuals:                      12   BIC:                            -69.50
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+GDP_usa         3.1753      1.022      3.106      0.009       0.948       5.403
+L1.DX-Y.NYB    -4.2269      2.406     -1.757      0.104      -9.469       1.016
+L1.^VIX         0.1201      0.102      1.173      0.263      -0.103       0.343
+L1.CL=F        -0.4826      0.454     -1.063      0.308      -1.471       0.506
+==============================================================================
+Omnibus:                        2.870   Durbin-Watson:                   1.378
+Prob(Omnibus):                  0.238   Jarque-Bera (JB):                2.005
+Skew:                          -0.704   Prob(JB):                        0.367
+Kurtosis:                       1.988   Cond. No.                     2.49e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 2.49e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+####################################################################################################### 
+
+
+####################################################################################################### 
+
+model_2d 
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                BTC_USD   R-squared:                       0.490
+Model:                            OLS   Adj. R-squared:                  0.363
+Method:                 Least Squares   F-statistic:                     3.850
+Date:                Sun, 25 Aug 2024   Prob (F-statistic):             0.0385
+Time:                        00:24:23   Log-Likelihood:                 42.031
+No. Observations:                  16   AIC:                            -76.06
+Df Residuals:                      12   BIC:                            -72.97
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+===================================================================================
+                      coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------
+const              45.2343     12.619      3.585      0.004      17.740      72.728
+L2.M2_Liquidity    -9.5206      2.955     -3.222      0.007     -15.959      -3.082
+^VIX                0.2907      0.108      2.690      0.020       0.055       0.526
+^TNX                0.5916      0.346      1.711      0.113      -0.162       1.345
+==============================================================================
+Omnibus:                        1.284   Durbin-Watson:                   1.991
+Prob(Omnibus):                  0.526   Jarque-Bera (JB):                1.086
+Skew:                          -0.542   Prob(JB):                        0.581
+Kurtosis:                       2.325   Cond. No.                     1.19e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.19e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+####################################################################################################### 
+
+
+####################################################################################################### 
+
+model_2e 
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                BTC_USD   R-squared:                       0.654
+Model:                            OLS   Adj. R-squared:                  0.481
+Method:                 Least Squares   F-statistic:                     3.784
+Date:                Sun, 25 Aug 2024   Prob (F-statistic):             0.0349
+Time:                        00:24:23   Log-Likelihood:                 45.133
+No. Observations:                  16   AIC:                            -78.27
+Df Residuals:                      10   BIC:                            -73.63
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+====================================================================================
+                       coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------
+const               35.3872     31.636      1.119      0.289     -35.101     105.875
+IWDA.AS             -1.0104      1.536     -0.658      0.526      -4.433       2.412
+L2.CL=F             -0.1938      0.477     -0.406      0.693      -1.257       0.869
+L2.^TNX              0.8273      0.663      1.248      0.241      -0.650       2.305
+L2.DX-Y.NYB         -6.7208      2.238     -3.003      0.013     -11.707      -1.734
+BalanceSheet_usa    -2.2104      4.468     -0.495      0.632     -12.166       7.745
+==============================================================================
+Omnibus:                        1.139   Durbin-Watson:                   2.099
+Prob(Omnibus):                  0.566   Jarque-Bera (JB):                0.820
+Skew:                           0.208   Prob(JB):                        0.664
+Kurtosis:                       1.972   Cond. No.                     5.44e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 5.44e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+####################################################################################################### 
+
+
+####################################################################################################### 
+
+model_3a 
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                BTC_USD   R-squared:                       0.105
+Model:                            OLS   Adj. R-squared:                 -0.119
+Method:                 Least Squares   F-statistic:                    0.4675
+Date:                Sun, 25 Aug 2024   Prob (F-statistic):              0.710
+Time:                        00:24:23   Log-Likelihood:                 37.522
+No. Observations:                  16   AIC:                            -67.04
+Df Residuals:                      12   BIC:                            -63.95
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          0.2819      5.027      0.056      0.956     -10.671      11.235
+^VIX           0.1621      0.151      1.072      0.305      -0.167       0.492
+SPY            1.3100      1.527      0.858      0.408      -2.016       4.636
+^TNX           1.2044      1.239      0.972      0.350      -1.495       3.903
+==============================================================================
+Omnibus:                        1.343   Durbin-Watson:                   0.820
+Prob(Omnibus):                  0.511   Jarque-Bera (JB):                1.136
+Skew:                          -0.541   Prob(JB):                        0.567
+Kurtosis:                       2.270   Cond. No.                     2.56e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 2.56e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+####################################################################################################### 
+
+
+####################################################################################################### 
+
+model_3b 
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                BTC_USD   R-squared:                       0.572
+Model:                            OLS   Adj. R-squared:                  0.287
+Method:                 Least Squares   F-statistic:                     2.006
+Date:                Sun, 25 Aug 2024   Prob (F-statistic):              0.167
+Time:                        00:24:23   Log-Likelihood:                 43.429
+No. Observations:                  16   AIC:                            -72.86
+Df Residuals:                       9   BIC:                            -67.45
+Df Model:                           6                                         
+Covariance Type:            nonrobust                                         
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+const            5.4895      8.715      0.630      0.544     -14.225      25.204
+TLT              0.5691      1.235      0.461      0.656      -2.224       3.363
+GLD             -1.8571      1.118     -1.661      0.131      -4.386       0.672
+SPY             -0.1060      1.037     -0.102      0.921      -2.452       2.241
+DX-Y.NYB        -0.9638      3.177     -0.303      0.769      -8.152       6.224
+HashRate         0.5286      0.194      2.723      0.023       0.090       0.968
+Nr_Addresses     0.0250      0.179      0.139      0.892      -0.380       0.430
+==============================================================================
+Omnibus:                        2.948   Durbin-Watson:                   2.428
+Prob(Omnibus):                  0.229   Jarque-Bera (JB):                1.279
+Skew:                          -0.663   Prob(JB):                        0.528
+Kurtosis:                       3.401   Cond. No.                     1.99e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.99e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+####################################################################################################### 
+
+
+####################################################################################################### 
+
+model_3c 
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                BTC_USD   R-squared:                       0.289
+Model:                            OLS   Adj. R-squared:                  0.112
+Method:                 Least Squares   F-statistic:                     1.629
+Date:                Sun, 25 Aug 2024   Prob (F-statistic):              0.235
+Time:                        00:24:23   Log-Likelihood:                 39.370
+No. Observations:                  16   AIC:                            -70.74
+Df Residuals:                      12   BIC:                            -67.65
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+===================================================================================
+                      coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------
+const               0.2030      2.765      0.073      0.943      -5.822       6.228
+L2.HashRate         0.2338      0.196      1.194      0.256      -0.193       0.661
+L2.GLD              1.4834      0.991      1.497      0.160      -0.675       3.642
+L1.Nr_Addresses    -0.1593      0.108     -1.469      0.167      -0.396       0.077
+==============================================================================
+Omnibus:                        1.579   Durbin-Watson:                   1.467
+Prob(Omnibus):                  0.454   Jarque-Bera (JB):                1.296
+Skew:                          -0.583   Prob(JB):                        0.523
+Kurtosis:                       2.235   Cond. No.                     5.21e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 5.21e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+####################################################################################################### 
+
