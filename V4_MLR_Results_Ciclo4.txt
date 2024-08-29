@@ -1,0 +1,143 @@
+
+####################################################################################################### 
+
+model_1a 
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                BTC_USD   R-squared:                       0.933
+Model:                            OLS   Adj. R-squared:                  0.932
+Method:                 Least Squares   F-statistic:                     481.0
+Date:                Fri, 30 Aug 2024   Prob (F-statistic):          1.09e-101
+Time:                        00:25:30   Log-Likelihood:                 288.01
+No. Observations:                 206   AIC:                            -566.0
+Df Residuals:                     201   BIC:                            -549.4
+Df Model:                           4                                         
+Covariance Type:                  HAC                                         
+===============================================================================================
+                                  coef    std err          z      P>|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------
+const                          -4.5315      0.621     -7.292      0.000      -5.749      -3.314
+L1_Bitcoin_Wikipedia_Search     0.1060      0.043      2.443      0.015       0.021       0.191
+L1_Miners_Revenue_USD           0.8588      0.044     19.557      0.000       0.773       0.945
+L1_Mining_Difficulty            0.0809      0.042      1.949      0.051      -0.000       0.162
+L1_USD_OnChain_Volume           0.0295      0.047      0.624      0.533      -0.063       0.122
+==============================================================================
+Omnibus:                       46.985   Durbin-Watson:                   1.057
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              164.678
+Skew:                          -0.870   Prob(JB):                     1.74e-36
+Kurtosis:                       7.020   Cond. No.                     1.73e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity and autocorrelation robust (HAC) using 12 lags and with small sample correction
+[2] The condition number is large, 1.73e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+####################################################################################################### 
+
+
+####################################################################################################### 
+
+model_1b 
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                BTC_USD   R-squared:                       0.148
+Model:                            OLS   Adj. R-squared:                  0.135
+Method:                 Least Squares   F-statistic:                    0.8900
+Date:                Fri, 30 Aug 2024   Prob (F-statistic):              0.447
+Time:                        00:25:30   Log-Likelihood:                 26.313
+No. Observations:                 206   AIC:                            -44.63
+Df Residuals:                     202   BIC:                            -31.31
+Df Model:                           3                                         
+Covariance Type:                  HAC                                         
+======================================================================================
+                         coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------
+const               -110.5211    108.377     -1.020      0.308    -322.937     101.895
+L1_Nr_Transactions    -0.2285      0.398     -0.574      0.566      -1.009       0.552
+L1_HashRate           -0.2184      0.541     -0.403      0.687      -1.280       0.843
+L1_BTC_Supply         16.2185     15.475      1.048      0.295     -14.112      46.549
+==============================================================================
+Omnibus:                       58.948   Durbin-Watson:                   0.037
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               11.168
+Skew:                           0.141   Prob(JB):                      0.00376
+Kurtosis:                       1.895   Cond. No.                     3.25e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity and autocorrelation robust (HAC) using 12 lags and with small sample correction
+[2] The condition number is large, 3.25e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+####################################################################################################### 
+
+
+####################################################################################################### 
+
+model_2a 
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                BTC_USD   R-squared:                       0.766
+Model:                            OLS   Adj. R-squared:                  0.762
+Method:                 Least Squares   F-statistic:                     64.40
+Date:                Fri, 30 Aug 2024   Prob (F-statistic):           5.69e-35
+Time:                        00:25:30   Log-Likelihood:                 159.64
+No. Observations:                 206   AIC:                            -309.3
+Df Residuals:                     201   BIC:                            -292.6
+Df Model:                           4                                         
+Covariance Type:                  HAC                                         
+===================================================================================
+                      coef    std err          z      P>|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------
+const             -12.0001      7.136     -1.682      0.093     -25.985       1.985
+L1_QQQ              2.8540      0.393      7.271      0.000       2.085       3.623
+L1_GLD             -1.0980      1.208     -0.909      0.363      -3.465       1.269
+L1_M2_Liquidity     2.4183      1.291      1.874      0.061      -0.111       4.948
+L1_TLT              0.6460      0.236      2.735      0.006       0.183       1.109
+==============================================================================
+Omnibus:                       21.531   Durbin-Watson:                   0.218
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               25.220
+Skew:                           0.772   Prob(JB):                     3.34e-06
+Kurtosis:                       3.743   Cond. No.                     2.04e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity and autocorrelation robust (HAC) using 12 lags and with small sample correction
+[2] The condition number is large, 2.04e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+####################################################################################################### 
+
+
+####################################################################################################### 
+
+model_2b 
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                BTC_USD   R-squared:                       0.736
+Model:                            OLS   Adj. R-squared:                  0.731
+Method:                 Least Squares   F-statistic:                     52.86
+Date:                Fri, 30 Aug 2024   Prob (F-statistic):           2.23e-30
+Time:                        00:25:30   Log-Likelihood:                 146.95
+No. Observations:                 206   AIC:                            -283.9
+Df Residuals:                     201   BIC:                            -267.3
+Df Model:                           4                                         
+Covariance Type:                  HAC                                         
+==========================================================================================
+                             coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------------
+const                    -15.2621     11.082     -1.377      0.168     -36.983       6.459
+L1_VIX                    -0.3796      0.191     -1.990      0.047      -0.753      -0.006
+L1_Dollar_Index           -8.0245      0.776    -10.345      0.000      -9.545      -6.504
+L1_BalanceSheet_global     8.1179      2.715      2.991      0.003       2.797      13.438
+L1_OIL_USD                 0.5247      0.300      1.750      0.080      -0.063       1.112
+==============================================================================
+Omnibus:                       11.197   Durbin-Watson:                   0.246
+Prob(Omnibus):                  0.004   Jarque-Bera (JB):               12.120
+Skew:                           0.587   Prob(JB):                      0.00233
+Kurtosis:                       2.816   Cond. No.                     3.09e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity and autocorrelation robust (HAC) using 12 lags and with small sample correction
+[2] The condition number is large, 3.09e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+####################################################################################################### 
+
